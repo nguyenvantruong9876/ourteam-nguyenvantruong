@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #121212;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header .nav-item .nav-link, header .nav-item .collapse .btnmxh, header .collapse .nav-item .btnmxh {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 400;
+}
+header .nav-link a, header .collapse .btnmxh a {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 400;
+}
+header .collapse .btnphone a {
+  color: #f5f9fe;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #b61984;
+  box-shadow: 0 0 0 1em #b61984;
+  border-radius: 30px;
+}
+header .collapse .btnmxh {
+  padding-left: 30px;
+  font-size: 24px;
+}
+header .collapse :hover {
+  text-decoration: none;
+}
+
+.bannerlanguege .banner_content {
+  width: 80%;
+  margin: 0 auto;
+}
+.bannerlanguege .banner_container {
+  display: flex;
+  align-items: center;
+}
+.bannerlanguege .banner_left {
+  width: 50%;
+}
+.bannerlanguege .banner_left .title p {
+  color: #b61984;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.bannerlanguege .banner_left .title h2 {
+  position: relative;
+  z-index: 1;
+}
+.bannerlanguege .banner_left .title h2::after, .bannerlanguege .banner_left .title ::before {
+  content: " ";
+  line-height: 0;
+  display: table;
+  width: 100%;
+}
+.bannerlanguege .banner_right {
+  width: 50%;
+}
+.bannerlanguege .banner_rt img {
+  padding: 55px;
+  width: 100%;
+}
+.bannerlanguege .bannertop, .bannerlanguege .bannerborder {
+  position: absolute;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+.bannerlanguege .bannertop img, .bannerlanguege .bannerborder img {
+  max-width: 100%;
+  display: block;
+}/*# sourceMappingURL=main.css.map */

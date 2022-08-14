@@ -1,0 +1,38 @@
+header{
+   
+    .nav-item{
+        .nav-link{
+            @include styleText ($color-dark-1, $fs-1, $fw-1);
+            
+        }
+    }
+    .nav-link{
+        a {
+            @include styleText ($color-dark-1, $fs-1, $fw-1); 
+           
+        }
+    }
+    .collapse{
+
+        .btnphone{
+            a {
+                @include styleText ($color-white-1, $fs-1, $fw-1); 
+                background-color: $bg-color;
+                box-shadow: 0 0 0 1em #b61984 ;
+                border-radius: 30px;
+                :hover{
+                    
+                }
+            }
+        }
+        
+        .btnmxh{
+            padding-left: 30px;
+            font-size: $fs-3;
+            @extend .nav-link;
+        }
+        :hover{
+            text-decoration: none;
+        }
+    }
+}
