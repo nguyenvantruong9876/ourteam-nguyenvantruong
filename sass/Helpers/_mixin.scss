@@ -3,3 +3,14 @@
     font-size: $fs;
     font-weight: $fw;
 }
+@mixin styleButton($bg-color, $radius, $border, $py, $px) {
+    background: $bg-color;  
+    border-radius: $radius;
+    border: $border;
+    padding:  $py $px;
+}
+@mixin styleButtonHover($bg-hover, $bd-hover, $color-hover){
+    background: $bg-hover;
+    border-radius: $bd-hover;
+    color: $color-hover;
+}

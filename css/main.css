@@ -12,72 +12,238 @@ body {
   font-weight: 400;
 }
 
-header .nav-item .nav-link, header .nav-item .collapse .btnmxh, header .collapse .nav-item .btnmxh {
+.btnphone {
+  background: #b61984;
+  border-radius: 30px;
+  border: 2px solid #b61984;
+  padding: 13.5px 25px;
+  color: #f5f9fe;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.btnphone:hover {
+  background: #f5f9fe;
+  border-radius: #b61984;
+  color: #b61984;
+  transition: all 0.5s;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link, header .navbar-expand-lg .navbar-nav .collapse .btnmxh, header .collapse .navbar-expand-lg .navbar-nav .btnmxh {
+  padding-right: 1.5rem;
   color: #121212;
   font-size: 16px;
   font-weight: 400;
 }
 header .nav-link a, header .collapse .btnmxh a {
+  padding-left: 20px;
   color: #121212;
   font-size: 16px;
   font-weight: 400;
 }
+header .collapse {
+  padding-left: 100px;
+}
 header .collapse .btnphone a {
   color: #f5f9fe;
   font-size: 16px;
-  font-weight: 400;
-  background-color: #b61984;
-  box-shadow: 0 0 0 1em #b61984;
-  border-radius: 30px;
+  font-weight: 600;
 }
-header .collapse .btnmxh {
-  padding-left: 30px;
-  font-size: 24px;
-}
-header .collapse :hover {
+header .collapse .btnphone a:hover {
   text-decoration: none;
 }
+header .collapse .btnmxh {
+  font-size: 24px;
+  padding-left: 20px;
+}
 
-.bannerlanguege .banner_content {
-  width: 80%;
-  margin: 0 auto;
+.bannerlanguege {
+  width: 100%;
+  padding: 50px 0 40px;
+  position: relative;
+}
+.bannerlanguege .container {
+  width: 100%;
+  padding: 0 29px;
+  top: 21px;
+  z-index: 3;
 }
 .bannerlanguege .banner_container {
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 .bannerlanguege .banner_left {
-  width: 50%;
+  width: 55%;
 }
-.bannerlanguege .banner_left .title p {
+.bannerlanguege .banner_left .title h2 {
   color: #b61984;
   font-size: 1.1rem;
   font-weight: 600;
 }
-.bannerlanguege .banner_left .title h2 {
+.bannerlanguege .banner_left .title span {
+  font-weight: 700;
   position: relative;
-  z-index: 1;
+  font-size: 3.5rem;
 }
-.bannerlanguege .banner_left .title h2::after, .bannerlanguege .banner_left .title ::before {
+.bannerlanguege .banner_left .title::after,
+.bannerlanguege .banner_left .title ::before {
   content: " ";
   line-height: 0;
   display: table;
   width: 100%;
 }
-.bannerlanguege .banner_right {
-  width: 50%;
+.bannerlanguege .bannertop {
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-.bannerlanguege .banner_rt img {
-  padding: 55px;
+.bannerlanguege .bannertop img {
+  width: 99%;
+  height: auto;
+  display: block;
+}
+.bannerlanguege .bannerborder {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.bannerlanguege .bannerborder img {
   width: 100%;
+  height: auto;
+  display: block;
 }
-.bannerlanguege .bannertop, .bannerlanguege .bannerborder {
+
+.people {
+  z-index: 2;
+  position: relative;
+  background-color: #dcd1f3;
+}
+.people .row {
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.people .row .card {
+  border-radius: 10px;
+  z-index: 5;
+}
+.people .row .card img {
+  border-radius: 10px;
+}
+.people .row .card:hover {
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+}
+.people .peopleborder {
+  bottom: 0;
   position: absolute;
   right: 0;
   left: 0;
   pointer-events: none;
 }
-.bannerlanguege .bannertop img, .bannerlanguege .bannerborder img {
+.people .peopleborder img {
   max-width: 100%;
+  height: auto;
+}
+
+.formpeople {
+  position: relative;
+}
+.formpeople .row {
+  width: 100%;
+}
+.formpeople .formimg {
   display: block;
+  overflow: hidden;
+}
+.formpeople .formimg img {
+  display: block;
+  margin: 0;
+  line-height: 0;
+  max-width: 100%;
+  height: auto;
+}
+.formpeople .formtext .formthunhat {
+  display: flex;
+  justify-content: center;
+}
+.formpeople .formtext .formthunhat .name {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  padding-right: 1em;
+}
+.formpeople .formtext .formthunhat .name .fa-solid {
+  position: absolute;
+  top: 7.3rem;
+  left: 3em;
+}
+.formpeople .formtext .formthunhat .email {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.formpeople .formtext .formthunhat .email .fa-solid {
+  left: 1em;
+  line-height: 1;
+  position: absolute;
+  top: 0.6rem;
+  right: 3em;
+}
+.formpeople form {
+  border-radius: 10px;
+  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+.formpeople form .over {
+  margin-bottom: 25px;
+}
+.formpeople form .form-group {
+  width: 90%;
+}
+.formpeople form .form-group .form-control {
+  padding: 0.5rem 2.2rem;
+}
+.formpeople form .form-group textarea {
+  padding: 1em 1em 1em 3.5em !important;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em !important;
+  border-radius: 20px;
+}
+.formpeople form .form-group .input-group-langugue {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  position: relative;
+}
+.formpeople form .form-group .input-group-langugue .fa-solid {
+  left: 1em;
+  position: absolute;
+  top: 0.6rem;
+}
+.formpeople form .form-group .input-group-messages {
+  position: absolute;
+  top: 16.3em;
+  left: 3.2em;
+}
+.formpeople .formpeoplebottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.formpeople .formpeoplebottom img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  height: auto;
+  background-image: url(../img/footer_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */

@@ -1,57 +1,74 @@
 .bannerlanguege {
-    
-   
-    .banner_content {
-        width: 80%;
-        margin: 0 auto;
+    width: 100%;
+    padding: 50px 0 40px;
+    position: relative;
+
+    .container {
+        width: 100%;
+        padding: 0 29px;
+        top: 21px;
+        z-index: 3;
     }
+
     .banner_container {
         display: flex;
-        align-items: center;
+        justify-content: center;
+        
     }
-    .banner_left{
-        width: 50%;
-        .title{
-            p{
-                @include styleText ($color-pink-1, $fs-2, $fw-2); 
-                
+
+    .banner_left {
+        width: 55%;
+
+        .title {
+
+            h2 {
+
+                @include styleText($color-pink-1, $fs-2, $fw-2);
             }
-            h2{
+
+            span {
+                font-weight: 700;
                 position: relative;
-                z-index: 1;
+                font-size: 3.5rem;
             }
-            h2::after, ::before{
-                
-                content: ' ';
+
+            &::after,
+            ::before {
+                content: " ";
                 line-height: 0;
                 display: table;
                 width: 100%;
             }
+
         }
-        
+
     }
-    .banner_right{
-        width: 50%;
-    }
-   
-    .banner_rt img{ 
-        padding: 55px; 
-        width: 100%;
-           
-    }
-    .bannertop, .bannerborder{
+
+
+
+    .bannertop {
         position: absolute;
-        right: 0;
         left: 0;
-        pointer-events: none;
-        img{
-            max-width: 100%;
-            
+        top: 0;
+
+        img {
+            width: 99%;
+            height: auto;
             display: block;
-            
-           
         }
     }
-    
-       
+
+    .bannerborder {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+
+        }
+    }
+
 }
