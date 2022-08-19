@@ -18,7 +18,7 @@
 
     .banner_left {
         width: 55%;
-
+        padding: 18% 0 15% 0;
         .title {
 
             h2 {
@@ -26,10 +26,10 @@
                 @include styleText($color-pink-1, $fs-2, $fw-2);
             }
 
-            span {
+            h1 {
                 font-weight: 700;
                 position: relative;
-                font-size: 3.5rem;
+                font-size: 4.3rem;
             }
 
             &::after,
@@ -43,7 +43,10 @@
         }
 
     }
-
+    .banner_right{
+        padding: 3% 0 15% 0;
+    }
+    
 
 
     .bannertop {

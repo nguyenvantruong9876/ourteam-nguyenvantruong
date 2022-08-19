@@ -16,7 +16,7 @@ body {
   background: #b61984;
   border-radius: 30px;
   border: 2px solid #b61984;
-  padding: 13.5px 25px;
+  padding: 20.5px 40px;
   color: #f5f9fe;
   font-size: 16px;
   font-weight: 600;
@@ -29,11 +29,56 @@ body {
   transition: all 0.5s;
 }
 
+.btn-sub {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.btn-sub:hover {
+  background: #b61984;
+  border-radius: #f5f9fe;
+  color: #f5f9fe;
+  transition: all 0.5s;
+}
+
+header .fixed-top {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%);
+  border-bottom: 2px solid rgba(231, 231, 231, 0.18);
+  background-color: transparent;
+}
+header .nav-fixed {
+  padding: 0px;
+  background-color: white;
+  height: 80px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  z-index: 100;
+}
+header .active::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #b61984;
+  display: block;
+  border-radius: 50%;
+  transform: translateX(23px) translateY(10px);
+}
 header .navbar-expand-lg .navbar-nav .nav-link, header .navbar-expand-lg .navbar-nav .collapse .btnmxh, header .collapse .navbar-expand-lg .navbar-nav .btnmxh {
   padding-right: 1.5rem;
   color: #121212;
   font-size: 16px;
   font-weight: 400;
+}
+header .navbar-nav a:hover {
+  text-decoration: none;
+  color: #b61984 !important;
 }
 header .nav-link a, header .collapse .btnmxh a {
   padding-left: 20px;
@@ -42,7 +87,7 @@ header .nav-link a, header .collapse .btnmxh a {
   font-weight: 400;
 }
 header .collapse {
-  padding-left: 100px;
+  padding-left: 130px;
 }
 header .collapse .btnphone a {
   color: #f5f9fe;
@@ -51,10 +96,15 @@ header .collapse .btnphone a {
 }
 header .collapse .btnphone a:hover {
   text-decoration: none;
+  color: #b61984;
 }
 header .collapse .btnmxh {
   font-size: 24px;
   padding-left: 20px;
+}
+header .collapse .btnmxh a:hover {
+  text-decoration: none;
+  color: #b61984;
 }
 
 .bannerlanguege {
@@ -74,16 +124,17 @@ header .collapse .btnmxh {
 }
 .bannerlanguege .banner_left {
   width: 55%;
+  padding: 18% 0 15% 0;
 }
 .bannerlanguege .banner_left .title h2 {
   color: #b61984;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
-.bannerlanguege .banner_left .title span {
+.bannerlanguege .banner_left .title h1 {
   font-weight: 700;
   position: relative;
-  font-size: 3.5rem;
+  font-size: 4.3rem;
 }
 .bannerlanguege .banner_left .title::after,
 .bannerlanguege .banner_left .title ::before {
@@ -91,6 +142,9 @@ header .collapse .btnmxh {
   line-height: 0;
   display: table;
   width: 100%;
+}
+.bannerlanguege .banner_right {
+  padding: 3% 0 15% 0;
 }
 .bannerlanguege .bannertop {
   position: absolute;
@@ -114,7 +168,6 @@ header .collapse .btnmxh {
 }
 
 .people {
-  z-index: 2;
   position: relative;
   background-color: #dcd1f3;
 }
@@ -128,7 +181,27 @@ header .collapse .btnmxh {
 }
 .people .row .card {
   border-radius: 10px;
-  z-index: 5;
+}
+.people .row .card .card-teacher {
+  text-align: center;
+  padding: 40px 5px;
+}
+.people .row .card .card-title {
+  font-size: 0.75rem;
+  margin-bottom: 0.7em;
+  color: #b61984;
+}
+.people .row .card .card-text {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #181818;
+  padding: 2px 0;
+}
+.people .row .card .card-text-2 {
+  font-size: 13px;
+  font-weight: 500;
+  color: #181818;
+  padding: 6px 0;
 }
 .people .row .card img {
   border-radius: 10px;
@@ -149,6 +222,7 @@ header .collapse .btnmxh {
 }
 
 .formpeople {
+  padding-top: 150px;
   position: relative;
 }
 .formpeople .row {
@@ -177,7 +251,7 @@ header .collapse .btnmxh {
 }
 .formpeople .formtext .formthunhat .name .fa-solid {
   position: absolute;
-  top: 7.3rem;
+  top: 11.2rem;
   left: 3em;
 }
 .formpeople .formtext .formthunhat .email {
@@ -197,15 +271,25 @@ header .collapse .btnmxh {
   border-radius: 10px;
   box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  background: #fff;
+}
+.formpeople form h2 {
+  font-size: 33px;
+  font-weight: 700;
+  color: #181818;
+  padding: 30px 0;
 }
 .formpeople form .over {
   margin-bottom: 25px;
 }
 .formpeople form .form-group {
   width: 90%;
+  color: #b61984;
+  padding-right: 6px;
 }
 .formpeople form .form-group .form-control {
   padding: 0.5rem 2.2rem;
+  border-radius: 20px;
 }
 .formpeople form .form-group textarea {
   padding: 1em 1em 1em 3.5em !important;
@@ -227,7 +311,7 @@ header .collapse .btnmxh {
 }
 .formpeople form .form-group .input-group-messages {
   position: absolute;
-  top: 16.3em;
+  top: 21.8em;
   left: 3.2em;
 }
 .formpeople .formpeoplebottom {
@@ -246,4 +330,70 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+footer .row {
+  padding: 180px 0 200px;
+}
+footer .row .title {
+  line-height: 1.2;
+}
+footer .row .title h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 24px 0;
+}
+footer .row .footer-address div i {
+  padding-right: 8px;
+  color: #fff;
+}
+footer .row .footer-address span {
+  color: #fff;
+}
+footer .row .icon-mxh {
+  padding: 20px 0;
+  margin-right: 18px;
+}
+footer .row .icon-mxh a {
+  font-size: 1.5rem;
+  font-weight: 200;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 5px;
+  margin-right: 13px;
+  transition: all 0.5s;
+}
+footer .row .icon-mxh a:hover {
+  color: #181818;
+}
+footer .row .footer-menu a,
+footer .row .footer-About a {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1019607843);
+  text-decoration: none;
+}
+footer .row .footer-menu a:hover,
+footer .row .footer-About a:hover {
+  opacity: 0.6;
+}
+footer .row .new div {
+  padding: 30px 0 20px;
+}
+footer .row .new input {
+  background-color: #b61984;
+  padding: 20.5px 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  text-align: center;
+}
+footer .row .new .btn-sub {
+  padding: 20.5px 92px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: all 300ms ease;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

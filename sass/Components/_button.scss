@@ -11,3 +11,16 @@
         transition: all 0.5s;
     }
 }
+.btn-sub{
+   
+   
+    @include styleText($color-dark-1, $fs-1, $fw-2);
+     
+    transition: all 0.5s;
+    
+    &:hover{
+        @include styleButtonHover($bg-color, $color-white-1, $color-white-1);
+        
+        transition: all 0.5s;
+    }
+}

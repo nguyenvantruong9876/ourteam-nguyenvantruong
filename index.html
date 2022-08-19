@@ -10,12 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/main.css">
     <title>Our Team – Wavy</title>
 </head>
 
 <body>
-    <header class="fixed-top">
+    <header class="fixed-top  " id="ourtean">
         <nav class="container navbar navbar-expand-lg">
             <a href="http://tabula.bold-themes.com/wavy/about-us/our-team/"><img src="./img/crest.png"> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -25,10 +32,10 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ">
                         <a class="nav-link" href="#">Home </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="#">About</a>
                     </li>
                     <li class="nav-item">
@@ -73,18 +80,20 @@
         <div class="container">
 
 
-            <div class="banner_container">
-                <div class="banner_left">
+            <div class="row">
+                <div class="banner_left col-6 ">
                     <div class="title">
 
-                        <h2>ABOUT US</h2>
-                        <span>The language teaching experts</span>
+                        <h2 class="animate__animated animate__fadeInLeft animate__delay-1s">ABOUT US</h2>
+                        <h1 class="animate__animated animate__fadeInLeft animate__delay-1s">The language teaching
+                            experts</h1>
 
                     </div>
                 </div>
-                <div class="banner_right">
+                <div class="banner_right col-6">
                     <div class="banner_rt">
-                        <img class="img-fluid" src="./img/hero_team.png" alt="hero_team">
+                        <img class="animate__animated animate__fadeIn animate__delay-0.9s" src="./img/hero_team.png"
+                            alt="hero_team">
                     </div>
                 </div>
             </div>
@@ -105,8 +114,8 @@
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
-                        <div class="card">
-                            <img src="./img/teacher_1.jpg" alt="teacher_1">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-1s">
+                            <img src="./img/teacher_1.jpg" class="card-img-top" alt="teacher_1">
                             <div class="card-teacher">
                                 <span class="card-title">ITALIAN</span>
                                 <h4 class="card-text">July Roberts</h4>
@@ -116,8 +125,8 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
 
-                        <div class="card">
-                            <img src="./img/teacher_2.jpg" alt="teacher_2">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-2s">
+                            <img src="./img/teacher_2.jpg" class="card-img-top" alt="teacher_2">
                             <div class="card-teacher">
                                 <span class="card-title">FRENCH</span>
                                 <h4 class="card-text">Jon Stone</h4>
@@ -127,8 +136,8 @@
 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="card">
-                            <img src="./img/teacher_3.jpg" alt="teacher_3">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-3s">
+                            <img src="./img/teacher_3.jpg" class="card-img-top" alt="teacher_3">
                             <div class="card-teacher">
                                 <span class="card-title">JAPANESE</span>
                                 <h4 class="card-text">Emma Stone</h4>
@@ -138,8 +147,8 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
-                        <div class="card">
-                            <img src="./img/teacher_4.jpg" alt="teacher_4">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-4s">
+                            <img src="./img/teacher_4.jpg" class="card-img-top" alt="teacher_4">
                             <div class="card-teacher">
                                 <span class="card-title">CHINESE</span>
                                 <h4 class="card-text">Mark Lee</h4>
@@ -154,8 +163,8 @@
             <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3 ">
-                        <div class="card">
-                            <img src="./img/teacher_5.jpg" alt="teacher_5">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-1s">
+                            <img src="./img/teacher_5.jpg" class="card-img-top" alt="teacher_5">
                             <div class="card-teacher">
                                 <span class="card-title">RUSSIAN</span>
                                 <h4 class="card-text">John Doe</h4>
@@ -165,8 +174,8 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
 
-                        <div class="card">
-                            <img src="./img/teacher_6.jpg" alt="teacher_6">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-2s">
+                            <img src="./img/teacher_6.jpg" class="card-img-top" alt="teacher_6">
                             <div class="card-teacher">
                                 <span class="card-title">SWEDEN</span>
                                 <h4 class="card-text">Jane Smith</h4>
@@ -176,7 +185,7 @@
 
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="card">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-3s">
                             <img src="./img/teacher_7.jpg" class="card-img-top" alt="teacher_7">
                             <div class="card-teacher">
                                 <span class="card-title">SPANISH</span>
@@ -187,8 +196,8 @@
                     </div>
 
                     <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
-                        <div class="card">
-                            <img src="./img/teacher_8.jpg" alt="teacher_8">
+                        <div class="card wow animate__animated animate__fadeIn animate__delay-4s">
+                            <img src="./img/teacher_8.jpg" class="card-img-top" alt="teacher_8">
                             <div class="card-teacher">
                                 <span class="card-title">ITALIAN</span>
                                 <h4 class="card-text">July Roberts</h4>
@@ -210,10 +219,10 @@
                 <img src="./img/accent_bottom_wave_01.png">
             </div>
             <div class="row">
-                <div class="formimg col-6">
+                <div class="formimg col-6 wow animate__animated animate__slideInLeft animate__delay-1s">
                     <img class="img-fluid" src="./img/conatct_inner.png" alt="conatct_inner">
                 </div>
-                <div class="formtext col-6">
+                <div class="formtext col-6 wow animate__animated animate__fadeIn animate__delay-1s">
                     <form>
                         <div class="over"></div>
                         <h2>Find Your Course</h2>
@@ -283,13 +292,13 @@
 
     </section>
     <footer>
-        <div class="container-fluid">
-            <div class="row footer-width">
+        <div class="container">
+            <div class="row footer-Contact">
                 <div class="col-xl-3 col-md-6 col-lg-3 col-sm-12">
-                    <span class="title-footer">
-                        <h5>Contact us</h5>
+                    <span class="title">
+                        <h2>Contact us</h2>
                     </span>
-                    <div class="content-footer">
+                    <div class="footer-address">
                         <div>
                             <i class="fa-solid fa-location-dot"></i>
                             <span>Franklin St, Greenpoint Ave</span>
@@ -303,7 +312,7 @@
                             <span>Monday - Friday: 8 AM - 5 PM</span>
                         </div>
                     </div>
-                    <div class="icon-footer">
+                    <div class="icon-mxh">
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -311,10 +320,10 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3 col-sm-12">
-                    <span class="title-footer">
-                        <h5>Quick Links</h5>
+                    <span class="title">
+                        <h2>Quick Links</h2>
                     </span>
-                    <div class="footer-link">
+                    <div class="footer-menu">
                         <a href="#">Home</a>
                         <a href="#">Courses</a>
                         <a href="#">Schedule</a>
@@ -322,10 +331,10 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3 col-sm-12">
-                    <span class="title-footer">
-                        <h5>About</h5>
+                    <span class="title">
+                        <h2>About</h2>
                     </span>
-                    <div class="footer-link">
+                    <div class="footer-About">
                         <a href="#">About Us</a>
                         <a href="#">Events</a>
                         <a href="#">Get Quote</a>
@@ -333,14 +342,14 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6 col-lg-3 col-sm-12">
-                    <span class="title-footer">
-                        <h5>Newsletter</h5>
+                    <span class="title">
+                        <h2>Newsletter</h2>
                     </span>
-                    <div class="content-new">
+                    <div class="new">
                         <div>
-                            <input type="text" placeholder="Your email">
+                            <input type="email" placeholder="Your email">
                         </div>
-                        <button class="btn1 btn-footer">SUBSCRIBE</button>
+                        <button class="btn-sub">SUBSCRIBE</button>
                     </div>
                 </div>
             </div>
@@ -353,6 +362,11 @@
         integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
         crossorigin="anonymous"></script>
 
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
