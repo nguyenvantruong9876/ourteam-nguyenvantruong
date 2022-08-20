@@ -86,9 +86,6 @@ header .nav-link a, header .collapse .btnmxh a {
   font-size: 16px;
   font-weight: 400;
 }
-header .collapse {
-  padding-left: 130px;
-}
 header .collapse .btnphone a {
   color: #f5f9fe;
   font-size: 16px;
@@ -129,6 +126,8 @@ header .btnmxh {
   }
   header .nav-link, header .collapse .btnmxh {
     text-align: center;
+    background-color: white;
+    width: 100%;
   }
   header header .port img {
     width: 48px;
