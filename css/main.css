@@ -16,7 +16,7 @@ body {
   background: #b61984;
   border-radius: 30px;
   border: 2px solid #b61984;
-  padding: 11.5px 25px;
+  padding: 15.5px 35px;
   color: #f5f9fe;
   font-size: 16px;
   font-weight: 600;
@@ -109,6 +109,7 @@ header .collapse .btnmxh a:hover {
 
 .bannerlanguege {
   width: 100%;
+  padding: 50px 0 40px;
   position: relative;
 }
 .bannerlanguege .container {
@@ -123,20 +124,17 @@ header .collapse .btnmxh a:hover {
 }
 .bannerlanguege .banner_left {
   width: 55%;
-  padding: 16% 0 5% 0;
+  padding: 18% 0 15% 0;
 }
 .bannerlanguege .banner_left .title h2 {
   color: #b61984;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 .bannerlanguege .banner_left .title h1 {
   font-weight: 700;
   position: relative;
   font-size: 4.3rem;
-}
-.bannerlanguege .banner_right {
-  padding: 3% 0 15% 0;
 }
 .bannerlanguege .bannertop {
   position: absolute;
