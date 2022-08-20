@@ -107,6 +107,34 @@ header .collapse .btnmxh a:hover {
   color: #b61984;
 }
 
+@media screen and (max-width: 992px) {
+  header .navbar-toggler:hover {
+    color: #b61984;
+  }
+  header .btnphone,
+header .btnmxh {
+    display: none;
+  }
+  header .container {
+    background-color: white;
+  }
+  header .navbar {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+    height: 50px;
+  }
+  header .navbar-toggler {
+    background-color: transparent;
+    color: #181818;
+  }
+  header .nav-link, header .collapse .btnmxh {
+    text-align: center;
+  }
+  header header .port img {
+    width: 48px;
+    height: 48px;
+  }
+}
 .bannerlanguege {
   width: 100%;
   padding: 50px 0 40px;

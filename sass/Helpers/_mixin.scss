@@ -14,3 +14,15 @@
     border-radius: $bd-hover;
     color: $color-hover;
 }
+@mixin responsive($screem){
+    @if (map-has-key($map: $breakpoints, $key: $screem )) {
+        //tìm thấy tên màn hình trong danh sách của $breakpoints
+        $value: map-get($map: $breakpoints, $key: $screem);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else{
+        @warn "Sai tên màn hinh nè";
+    }
+}

@@ -9,17 +9,17 @@ header {
         transform: translateX(-50%);
         border-bottom: 2px solid rgba(231, 231, 231, 0.18);
         background-color: transparent;
-      }
+    }
 
-      .nav-fixed {
+    .nav-fixed {
         padding: 0px;
         background-color: white;
         height: 80px;
         border-bottom: none;
         box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
         z-index: 100;
-      }
-      
+    }
+
     .active::after {
         content: "";
         width: 9px;
@@ -29,6 +29,8 @@ header {
         border-radius: 50%;
         transform: translateX(23px) translateY(10px);
     }
+
+
 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.5rem;
@@ -81,5 +83,51 @@ header {
 
     }
 
-    
+}
+
+//reponsive
+@include responsive("large") {
+    header {
+        .navbar-toggler {
+
+            &:hover {
+                color: #b61984;
+            }
+
+
+        }
+
+        .btnphone,
+        .btnmxh {
+            display: none;
+        }
+
+        .container {
+            background-color: white;
+        }
+
+        .navbar {
+            justify-content: flex-end;
+            flex-direction: row-reverse;
+            height: 50px;
+        }
+
+        .navbar-toggler {
+            background-color: transparent;
+            color: #181818;
+        }
+
+        .nav-link {
+            text-align: center;
+        }
+
+        header .port img {
+            width: 48px;
+            height: 48px;
+        }
+
+
+    }
+
+
 }
