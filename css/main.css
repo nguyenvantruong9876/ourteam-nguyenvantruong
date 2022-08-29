@@ -197,7 +197,7 @@ header .btnmxh {
   border: transparent;
 }
 .people .row .card:hover {
-  box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 17px;
 }
 .people .row .card .card-teacher {
   text-align: center;
