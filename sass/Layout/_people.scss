@@ -14,7 +14,12 @@
 
         .card {
             border-radius: 10px;
-           
+            overflow: hidden;
+            transition: all 0.5s;
+            border: transparent;
+            &:hover {
+                box-shadow: rgb(0 0 0 / 18%) 0px 24px 18px;
+            }
 
             .card-teacher {
                 text-align: center;
@@ -43,11 +48,14 @@
 
             img {
                 border-radius: 10px;
+                &:hover {
+                    transition: all 1s;
+                    transform: scale3d(1.07, 1.07, 1.07);
+                }
+                
+               
             }
 
-            &:hover {
-                box-shadow: 0 30px 30px -10px rgb(0 0 0 / 20%);
-            }
 
         }
 

@@ -16,7 +16,7 @@ body {
   background: #b61984;
   border-radius: 30px;
   border: 2px solid #b61984;
-  padding: 15.5px 35px;
+  padding: 11px 35px;
   color: #f5f9fe;
   font-size: 16px;
   font-weight: 600;
@@ -45,21 +45,16 @@ body {
 header .fixed-top {
   position: fixed;
   width: 100%;
-  height: 100px;
   top: 0;
   left: 50%;
-  z-index: 100;
-  transform: translateX(-50%);
-  border-bottom: 2px solid rgba(231, 231, 231, 0.18);
-  background-color: transparent;
+  padding: 0;
 }
 header .nav-fixed {
+  transition: all 0.7s;
   padding: 0px;
   background-color: white;
-  height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  z-index: 100;
 }
 header .active::after {
   content: "";
@@ -151,7 +146,7 @@ header .btnmxh {
 }
 .bannerlanguege .banner_left {
   width: 55%;
-  padding: 18% 0 15% 0;
+  padding: 15% 0 15% 0;
 }
 .bannerlanguege .banner_left .title h2 {
   color: #b61984;
@@ -169,9 +164,8 @@ header .btnmxh {
   top: 0;
 }
 .bannerlanguege .bannertop img {
-  width: 99%;
+  width: 86%;
   height: auto;
-  display: block;
 }
 .bannerlanguege .bannerborder {
   position: absolute;
@@ -198,6 +192,12 @@ header .btnmxh {
 }
 .people .row .card {
   border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+  border: transparent;
+}
+.people .row .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 24px 18px;
 }
 .people .row .card .card-teacher {
   text-align: center;
@@ -223,8 +223,9 @@ header .btnmxh {
 .people .row .card img {
   border-radius: 10px;
 }
-.people .row .card:hover {
-  box-shadow: 0 30px 30px -10px rgba(0, 0, 0, 0.2);
+.people .row .card img:hover {
+  transition: all 1s;
+  transform: scale3d(1.07, 1.07, 1.07);
 }
 .people .peopleborder {
   bottom: 0;
@@ -402,13 +403,17 @@ footer .row .new div {
 }
 footer .row .new input {
   background-color: #b61984;
-  padding: 20.5px 40px;
+  padding: 11px 42px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  color: white;
   text-align: center;
 }
+footer .row .new .Email::placeholder {
+  color: white;
+}
 footer .row .new .btn-sub {
-  padding: 20.5px 92px;
+  padding: 11px 92px;
   border: 1px solid white;
   border-radius: 20px;
   transition: all 300ms ease;

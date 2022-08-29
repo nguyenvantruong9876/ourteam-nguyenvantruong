@@ -1,6 +1,6 @@
 .btnphone{
    
-    @include styleButton($bg-color, $bd-3, $bd-1 solid #b61984, $pd-3 + 0.5, $pd-4);
+    @include styleButton($bg-color, $bd-3, $bd-1 solid #b61984, $pd-3, $pd-4);
     @include styleText($color-white-1, $fs-1, $fw-2);
      
     transition: all 0.5s;
@@ -9,7 +9,9 @@
         @include styleButtonHover($color-white-1, $color-pink-1, $color-pink-1);
         
         transition: all 0.5s;
+       
     }
+    
 }
 .btn-sub{
    

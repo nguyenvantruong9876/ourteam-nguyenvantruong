@@ -5,6 +5,6 @@ $(window).on("scroll", function () {
     if (scroll >280) {
         $("#ourtean").addClass("nav-fixed");
     } else {
-        $("ourtean").removeClass("nav-fixed");
+        $("#ourtean").removeClass("nav-fixed");
     }
 });
